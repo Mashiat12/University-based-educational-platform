@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Signin</title>
+    <style>
+      .body {
+        color: white;
+        background-color: rgb(19, 20, 22);
+        opacity: 0.9;
+      
+        border: 1px solid rgb(222, 231, 228);
+        padding: 30px;
+        width: 25%;
+        height: 50%;
+        margin: 12% auto;
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+      label {
+        display: inline-block;
+        width: 900px;
+        height: 20px;
+        margin-top: 10px;
+      }
+      
+      p {
+        padding-left: 10%;
+      }
+      body {
+        background: url("background.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat:no-repeat ;
+      }
+      #p {
+        background-color: rgb(233, 246, 241);
+      }
+      #togglePassword{margin-left:-100%;;cursor: pointer;}
+
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <h2>SIGN IN</h2>
+      <h4>Stay updated on your educational preferences</h4>
+      <form action="" method="get">
+        <!--action is used to go to next page after submission-->
+        <label for="Email">Email:</label><br />
+        <input type="email" id="email" name="Email" placeholder="your email address" required />
+        <br />
+        <br />
+        <label for="password">Password:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="enter password"
+          required/><i class="far fa-eye" id="togglePassword" ></i>
+        
+        <br />
+        <br />
+        <a href="/Forgot pass.html">Forgot password?</a> <br /><br />
+        <div class="button">
+          <button type="submit" class="login">login</button><br />
+          <input type="checkbox" checked="checked" name="remember" />remember me
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
