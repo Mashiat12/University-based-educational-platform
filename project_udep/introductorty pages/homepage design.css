@@ -1,0 +1,203 @@
+body{
+    padding: 0;
+    margin:0;
+    font-family: sans-serif;
+    font-size: 1.25em;
+    overflow: hidden;
+}
+.banner1,.banner2,.banner3,.banner4{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+}
+img{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-12%);
+    animation: zoom-out 3s linear infinite;
+}
+.ss{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-5%);
+    animation: zoom-out 3s linear infinite;
+}
+
+@keyframes zoom-out{
+ 100% {
+    width: 98%;
+    
+ }
+}
+.text-box{
+    width:35%;
+    position: absolute;
+    top: 5%;
+    left:3%;
+    animation: textup 12s linear infinite;
+    transform: translateY(100px);
+    color: rgb(0, 0, 0)
+    
+}
+.text-box2{
+    width:35%;
+    position: absolute;
+    top: 33%;
+    left:62%;
+    animation: textup 12s linear infinite;
+    transform: translateY(100px);
+    color: rgb(0, 0, 0)
+}
+.text-box3{
+    width:35%;
+    position: absolute;
+    top: 18%;
+    left:3%;
+    animation: textup 12s linear infinite;
+    transform: translateY(100px);
+    color: rgb(0, 0, 0);
+}
+.text-box4{
+    width:35%;
+    position: absolute;
+    top: 5%;
+    left:3%;
+    animation: textup 12s linear infinite;
+    transform: translateY(100px);
+    color: rgb(255, 255, 255)
+    
+}
+@keyframes textup{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0)px;
+    }
+}
+
+.text-box h1{
+    margin-bottom: 1.0em;
+}
+.text-box p{
+    font-size: 1.2em;
+    line-height: 1em;
+    margin-top: 4em;
+    font-weight: bold;
+}
+.text-box span{
+    background: red;
+    height: 0.09em;
+    width: 30%;
+    position: absolute;
+    left: 0;
+}
+.banner1{
+    animation: slide1 12s linear infinite;
+}
+.banner2{
+    animation: slide2 12s linear infinite;
+}
+.banner3{
+    animation: slide3 12s linear infinite;
+}
+.banner4{
+    animation: slide4 12s linear infinite;
+}
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+.text-box1{
+    animation-delay: 0s;
+    
+}
+.text-box2{
+    animation-delay: 3s;
+    
+}
+.text-box3{
+    animation-delay: 6s;
+    
+}
+.text-box4{
+    animation-delay: 9s;
+    
+}
+.text-box::after{
+    content:'';
+    margin: 100%;
+    padding: 50%;
+}

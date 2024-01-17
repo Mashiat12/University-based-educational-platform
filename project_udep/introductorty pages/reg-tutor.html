@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<style>
+.container{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        background-color: rgb(19, 20, 22);
+        opacity: 0.9;
+        border: 1px solid rgb(222, 231, 228);
+        padding: 25px;
+        width: 35%;
+        height: 50%;
+        margin: 12% auto;
+        font-family: 'Roboto Condensed', sans-serif;}
+* {box-sizing: border-box}
+body{background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("./7.jpg");;
+background-attachment: fixed;
+background-size: cover;
+background-repeat:no-repeat ;}
+
+input[type=text], input[type=number] {
+  color: rgb(17, 16, 15);
+  width: 60%;
+  padding: 7px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #cce5fd;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #f6f6f7;
+  outline:#5289ff;
+}
+.time{
+  color: rgb(17, 16, 15);
+  width: 60%;
+  padding: 7px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #cce5fd;} 
+  option{width: 60%;
+     padding: 1vh;
+     padding: 1vw;
+     margin: 5px 0 22px 0;
+     display: inline-block;
+     border: none;
+     background: #cce5fd;}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.donecancel{display: flex;
+  justify-content: space-between;
+  width: 100%;}
+button {
+  background-color: #028051;
+  color: rgb(255, 255, 255);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border:0;
+  outline: 0;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: background 1s;
+}
+
+button:hover {
+  opacity:10;
+}
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #5289ff;
+}
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+.container {
+  padding: 16px;
+}
+.donecancel::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+
+<form action=" " style="border:1px solid #1f0729">
+  <div class="container">
+    <h1>Registration for Tutor</h1>
+    <p>Please fill in this form </p>
+    <hr>
+    <label for="name"><b>First name</b></label><br>
+    <input type="text" placeholder="Enter your first name" name="text" required>
+    <br>
+    <label for="name"><b>Middle name</b></label><br>
+    <input type="text" placeholder="Enter your middle name" name="text">
+    <br>
+    <label for="name"><b>Last name</b></label><br>
+    <input type="text" placeholder="Enter your last name" name="text" required>
+    <br>
+    <label for="email"><b>Email</b></label><br>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <br>
+    <label for="name"><b>Division</b></label><br>
+    <div class="input-name">
+      <select class="time">
+          <option>Select your division</option>
+          <option>Dhaka</option>
+          <option>Rangpur</option>
+          <option>Khulna</option>
+          <option>Chattogram</option>
+          <option>Rajshahi</option>
+          <option>Sylhet</option>
+          <option>Mymensingh</option>
+          <option>Barisal</option>
+      </select>
+  </div>
+    <label for="name"><b>University</b></label><br>
+    <input type="text" placeholder="Enter your university" name="text" required>
+    <br>
+    <label for="name"><b>Department</b></label><br>
+    <input type="text" placeholder="Enter your department" name="text" required>
+    <br>
+    <label for="name"><b>Subject</b></label><br>
+    <input type="text" placeholder="Enter your preferable subject" name="text" required>
+    <br>
+    <label for="name"><b>Phone Number</b></label><br>
+    <input type="number" placeholder="Enter your contact number"  required><br>
+    <label for="time"><b>Time</b></label>
+    <div class="input-name">
+        <select class="time">
+            <option>Select a suitable time </option>
+            <option>12:00pm - 3:00pm </option>
+            <option>3:00pm - 6:00pm </option>
+            <option>6:00pm - 9:00pm  </option>
+            <option>9:00pm - 12:00am</option>
+            <option>night</option>
+        </select>
+    </div>
+    
+    
+    <p>By filling this form up you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="donecancel">
+      <button type="submit" class="signupbtn">Done</button>
+      <button type="button" class="cancelbtn">Cancel</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
