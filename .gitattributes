@@ -1,1 +1,8 @@
-*.hack linguist-language=CSS
+# Specify correct language for files mistakenly identified as Hack
+*.php linguist-language=PHP
+
+# Mark all files in the vendor directory as vendored (ignored in language stats)
+vendor/* linguist-vendored
+
+# Ignore any file with a .hack extension if they aren’t Hack language files
+*.hack linguist-vendored
